@@ -77,8 +77,6 @@ Reviewing code can be tricky. It is important to understand someone else's code 
 
 - [ ] Is there excessive repeated code?
 
- 
-
 ## 5. Having your code reviewed
 
 Having someone else look at your code can be scary and intimidating! The Waylab PI (Greg) will review your first couple pull requests to ease you into this process. However, with the lab growing and projects expanding, lab-wide pull requests are necessary. Work with Greg to find a pull request buddy, who will quickly become an expert on, and a cheerleader for, your project. Alternatively, post your pull request in the `pull-request-review` discord channel. 
