@@ -48,85 +48,6 @@ In order of value, presentations include:
 The invited talks sometimes may include an honorarium.
 
 
-## How to guide (attendance and reimbursement)
-
-The lab will cover all reasonable costs for conference attendance. This includes transportation, meals, registration, and incidentals. Please ask questions. **_Please save receipts as they could be required._**
-
-We use a service called [Concur](https://www.ucdenver.edu/offices/provost/office-of-the-provost/hr-and-finance-toolbox-home/procurement-and-travel/travel#ac-pre-travel-0) to track reimbursements and travel requests. Concur is where you will document all conference related expenses that require reimbursement.
-
-**Note:** When prompted to include the 6-digit SpeedType, please use **_63503956_** as this will charge the Way Lab account.
-
-The steps for paying/reimbursement include:
-
-1. Decide if attendance makes sense and is authorized
-
-2. File a “Travel request” on Concur
-
-   1. Follow this step-by-step guide here: <https://tinyurl.com/pre-travel> 
-
-   2. See <https://www.cu.edu/psc/training/booking-travel/requesting-approval-travel> for details
-
-3. Check if there is a travel award, and apply if so! 
-
-   1. This is important! It looks great on your CV and saves the lab money.
-
-4. Register for the conference
-
-   1. **Note:** Sometimes the order of this step is slightly different, but this is recommended to do after getting your pre-travel request approved.
-
-   2. Sometimes registration requires a first step of professional organization membership
-
-   3. There are two methods for registering for conferences:
-
-      1. Book yourself, save receipts
-
-         1. Reimbursed later, after travel
-
-      2. Book with Jenna Tomkinson using the lab procurement card
-
-         1. Paid directly with lab funds
-
-         2. Make sure there is NO TAX
-
-5. Book airfare (if applicable). Please be reasonable in terms of cost!
-
-   1. Use the Concur “Travel” tab and use the “Mixed Flight/Train Search” on the left hand side to look up flights.
-
-   2. Once you have add the information for departure and arrival dates, it will provide all flights available from all airlines
-
-      1. **Note:** It will show you which airlines that the university prefers and breaks down the available flights by how many stops there are.
-
-   3. Once you find the flights you want, follow ALL STEPS to the end or the reservation will be canceled.
-
-   4. The lab typically does not cover rental cars
-
-6. Book lodging (if applicable)
-
-   1. Often the conference offers a discounted hotel block/code. Use this code and book early to ensure accommodations
-
-   2. You will need to book this yourself and pay this out of pocket
-
-      1. Reimbursed later after travel
-
-7. Save receipts, save receipts, save receipts!
-
-   1. File for reimbursement on concur immediately upon return.
-
-8. **AFTER TRAVEL** (e.g., once you come back), you will go back into Concur to your approved request to add all expenses.
-
-   1. Typical expenses include:
-
-      1. Per-diem (for food)
-
-      2. Hotel/Lodging
-
-      3. Registration (if paid out-of-pocket)
-
-      4. Transportation (if paid out-of-pocket)
-
-      5. Poster printing
-
-
 ## Conferences on our radar
 
 ### CytoData
@@ -222,3 +143,84 @@ The steps for paying/reimbursement include:
 - There is a strong emphasis on microscopy techniques and applications as this is a powerful tool for studying cells
 
 - Larger conference
+
+
+## How to guide (attendance and reimbursement)
+
+> :exclamation: **Waylab Specific**: This may not apply to other labs!
+
+The lab will cover all reasonable costs for conference attendance. This includes transportation, meals, registration, and incidentals. Please ask questions. **_Please save receipts as they could be required._**
+
+We use a service called [Concur](https://www.ucdenver.edu/offices/provost/office-of-the-provost/hr-and-finance-toolbox-home/procurement-and-travel/travel#ac-pre-travel-0) to track reimbursements and travel requests. Concur is where you will document all conference related expenses that require reimbursement.
+
+**Note:** When prompted to include the 6-digit SpeedType, please use **_63503956_** as this will charge the Way Lab account.
+
+The steps for paying/reimbursement include:
+
+1. Decide if attendance makes sense and is authorized
+
+2. File a “Travel request” on Concur
+
+   1. Follow this step-by-step guide here: <https://tinyurl.com/pre-travel> 
+
+   2. See <https://www.cu.edu/psc/training/booking-travel/requesting-approval-travel> for details
+
+3. Check if there is a travel award, and apply if so! 
+
+   1. This is important! It looks great on your CV and saves the lab money.
+
+4. Register for the conference
+
+   1. **Note:** Sometimes the order of this step is slightly different, but this is recommended to do after getting your pre-travel request approved.
+
+   2. Sometimes registration requires a first step of professional organization membership
+
+   3. There are two methods for registering for conferences:
+
+      1. Book yourself, save receipts
+
+         1. Reimbursed later, after travel
+
+      2. Book with Jenna Tomkinson using the lab procurement card
+
+         1. Paid directly with lab funds
+
+         2. Make sure there is NO TAX
+
+5. Book airfare (if applicable). Please be reasonable in terms of cost!
+
+   1. Use the Concur “Travel” tab and use the “Mixed Flight/Train Search” on the left hand side to look up flights.
+
+   2. Once you have add the information for departure and arrival dates, it will provide all flights available from all airlines
+
+      1. **Note:** It will show you which airlines that the university prefers and breaks down the available flights by how many stops there are.
+
+   3. Once you find the flights you want, follow ALL STEPS to the end or the reservation will be canceled.
+
+   4. The lab typically does not cover rental cars
+
+6. Book lodging (if applicable)
+
+   1. Often the conference offers a discounted hotel block/code. Use this code and book early to ensure accommodations
+
+   2. You will need to book this yourself and pay this out of pocket
+
+      1. Reimbursed later after travel
+
+7. Save receipts, save receipts, save receipts!
+
+   1. File for reimbursement on concur immediately upon return.
+
+8. **AFTER TRAVEL** (e.g., once you come back), you will go back into Concur to your approved request to add all expenses.
+
+   1. Typical expenses include:
+
+      1. Per-diem (for food)
+
+      2. Hotel/Lodging
+
+      3. Registration (if paid out-of-pocket)
+
+      4. Transportation (if paid out-of-pocket)
+
+      5. Poster printing
