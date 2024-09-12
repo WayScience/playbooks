@@ -76,7 +76,7 @@ We also make sure that this link between the pipeline and data is itself version
 
 This process ensures that our data can be easily reprocessed by updated bioinformatics methods with new and improved methods.
 
-Examples: [cell-health-data](https://github.com/WayScience/cell-health-data), [nf1\_cellpainting\_data](https://github.com/WayScience/nf1_cellpainting_data), [CFReT\_data](https://github.com/WayScience/CFReT_data)
+Examples: [cell-health-data](https://github.com/WayScience/cell-health-data), [nf1_cellpainting_data](https://github.com/WayScience/nf1_cellpainting_data), [CFReT_data](https://github.com/WayScience/CFReT_data).
 
 ## 2. Considerations for each kind of Github repository
 

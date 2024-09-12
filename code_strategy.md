@@ -37,7 +37,8 @@ This means specifying software versions in an environment file (or docker image)
 Good code is readable.
 Based on the logic, variable names, and documentation, anyone (especially you!) should be able to understand what your code is doing.
 Readability also means standard formatting.
-We always lint our code, and use automatic formatting wherever possible (e.g. [python black](https://github.com/psf/black)). 
+We always lint our code, and use automatic formatting wherever possible (e.g. [python black](https://github.com/psf/black)).
+We use pre-commit hooks to ensure our code follows conventions before commiting.
 
 ### 3. Code should be well organized (maintainable)
 
@@ -56,7 +57,7 @@ Note that these conventions will change as the field of biomedical data science 
 
 2. Use [pathlib](https://docs.python.org/3/library/pathlib.html) to represent file-system paths.
 
-3. Save intermediate files in tab-separated value (tsv) format when possible.
+3. Save intermediate files in parquet (`.parquet`) format when possible.
 
 In general, we follow these [10 simple rules for reproducible computational research](https://doi.org/10.1371/journal.pcbi.1003285). 
 
