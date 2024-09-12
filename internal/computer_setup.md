@@ -1,5 +1,6 @@
 The Way Lab uses Linux distributions for our primary research computing.
-Follow these instructions to set up your computer for the first time. If you’re stuck, ask questions.
+Follow these instructions to set up your computer for the first time.
+If you’re stuck, ask questions.
 All of these steps are likely to change in the future, and, if there are any incomplete or missing details, please modify.
 
 
