@@ -192,7 +192,7 @@ The steps for paying/reimbursement include:
 
          1. Paid directly with lab funds
 
-         2. Make sure there is NO TAX
+         2. Make sure there is **NO TAX**
 
 5. Book airfare (if applicable). Please be reasonable in terms of cost!
 
