@@ -1,6 +1,10 @@
-Sharing resources is fundamental to advancing biomedical research. We share code, software, analyses, results, and data (or data access instructions) using Github. Our Github page is here: <https://github.com/WayScience>
+Sharing resources is fundamental to advancing biomedical research.
+We share code, software, analyses, results, and data (or data access instructions) using Github.
+Our Github page is here: <https://github.com/WayScience>
 
-We use several principles when creating, contributing to, and sharing github repositories. Each of these principles are slightly different depending on the kind of github repository. There are three categories of github repositories, each with specific design patterns:
+We use several principles when creating, contributing to, and sharing github repositories.
+Each of these principles are slightly different depending on the kind of github repository.
+There are three categories of github repositories, each with specific design patterns:
 
 1. Software
 
@@ -16,7 +20,9 @@ For each repository, we practice “pull request peer review”, which we also o
 
 ### 1. Software repository
 
-When people think about github, they usually think about open source software packages. The lab often produces individual pieces of software that we and the community use as tools. We follow standard procedures when writing software packages including:
+When people think about github, they usually think about open source software packages.
+The lab often produces individual pieces of software that we and the community use as tools.
+We follow standard procedures when writing software packages including:
 
 - Language-specific file structure and organization
 
@@ -36,23 +42,37 @@ Examples: [pycytominer](https://github.com/cytomining/pycytominer), [CytoSnake](
 
 ### 2. Analysis repository
 
-As biomedical data scientists, analysis repositories are the most common type of repository for our group. When most people think about a github repository, they are likely not thinking about storing a reproducible analysis. Nevertheless, this approach is gaining in popularity. 
+As biomedical data scientists, analysis repositories are the most common type of repository for our group.
+When most people think about a github repository, they are likely not thinking about storing a reproducible analysis.
+Nevertheless, this approach is gaining in popularity. 
 
 An analysis repository contains a collection of analyses linked together by the name of the project, which should be descriptive of the specific set of interrelated hypotheses.
 
-Analysis repositories contain numbered folders, or modules, that have a sequential relationship. For example, the first step in most analysis repositories is data access. Therefore, the first module is often called \`0.download-data\`, and it contains instructions on how to access the data you use in your analysis. The subsequent modules all use these data in various ways; often exploring the data or testing various hypotheses. We also include code for generating all publication quality figures as the last module. 
+Analysis repositories contain numbered folders, or modules, that have a sequential relationship. For example, the first step in most analysis repositories is data access.
+Therefore, the first module is often called \`0.download-data\`, and it contains instructions on how to access the data you use in your analysis.
+The subsequent modules all use these data in various ways; often exploring the data or testing various hypotheses.
+We also include code for generating all publication quality figures as the last module. 
 
-We use software libraries in these analyses, and we save specific versions in conda environment files or docker containers. We also must specify the license, present a clear README with reproducibility/usage instructions, a brief summary of the results, and citation instructions.
+We use software libraries in these analyses, and we save specific versions in conda environment files or docker containers.
+We also must specify the license, present a clear README with reproducibility/usage instructions, a brief summary of the results, and citation instructions.
 
-Analysis repositories must be included in our publications, and we consider them to be the ground truth methods section. The analyses must be fully reproducible (we aim for [Gold Reproducibility](https://www.nature.com/articles/s41592-021-01256-7#Sec4)) and open source. For each submission and subsequent resubmission, we generate specific “github releases”. We generate direct object identifiers (DOI) for these releases using Zenodo ([instructions](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)). We do not restrict ourselves to the one-repository per-paper strategy, instead, we opt for the one-release per-submission strategy (which can span multiple publications). 
+Analysis repositories must be included in our publications, and we consider them to be the ground truth methods section. The analyses must be fully reproducible (we aim for [Gold Reproducibility](https://www.nature.com/articles/s41592-021-01256-7#Sec4)) and open source.
+For each submission and subsequent resubmission, we generate specific “github releases”.
+We generate direct object identifiers (DOI) for these releases using Zenodo ([instructions](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)).
+We do not restrict ourselves to the one-repository per-paper strategy, instead, we opt for the one-release per-submission strategy (which can span multiple publications). 
 
 Examples: [phenotypic\_profiling\_model](https://github.com/WayScience/phenotypic_profiling_model), [gene\_dependency\_representations](https://github.com/WayScience/gene_dependency_representations)
 
 ### 3. Data repository
 
-In many projects, we collaborate with labs that generate data directly, and it is up to us to apply bioinformatics pipelines to generate analysis-ready data. We also often re-analyze existing, publicly available data (e.g. the resources on [Image Data Resource](https://idr.openmicroscopy.org/)). In these cases, we use a third github repository design: A data repository.
+In many projects, we collaborate with labs that generate data directly, and it is up to us to apply bioinformatics pipelines to generate analysis-ready data.
+We also often re-analyze existing, publicly available data (e.g. the resources on [Image Data Resource](https://idr.openmicroscopy.org/)).
+In these cases, we use a third github repository design: A data repository.
 
-The data repository contains two key elements: 1) A bioinformatics pipeline, or recipe, of all computational steps applied to the data and 2) the data, or pointers to the data. We strive to release all of our bioinformatics steps and data publicly so that others (and ourselves!) can benefit. We believe that version controlling both our pipeline and data is essential for reproducibility, and so that we (and others) understand exactly what steps generated all intermediate files. We also make sure that this link between the pipeline and data is itself version-controlled, so that data processing steps do not lose sync in re-analysis.
+The data repository contains two key elements: 1) A bioinformatics pipeline, or recipe, of all computational steps applied to the data and 2) the data, or pointers to the data.
+We strive to release all of our bioinformatics steps and data publicly so that others (and ourselves!) can benefit.
+We believe that version controlling both our pipeline and data is essential for reproducibility, and so that we (and others) understand exactly what steps generated all intermediate files.
+We also make sure that this link between the pipeline and data is itself version-controlled, so that data processing steps do not lose sync in re-analysis.
 
 This process ensures that our data can be easily reprocessed by updated bioinformatics methods with new and improved methods.
 
@@ -136,7 +156,8 @@ This process has many direct and indirect benefits.
 
    - Review to pass along tips along any of the above axes
 
-   - **Note:** Standards change over time, and we set our own standards internally. We do not prescribe a standard beyond the three items above.
+   - **Note:** Standards change over time, and we set our own standards internally.
+   We do not prescribe a standard beyond the three items above.
 
 6. The reviewer will submit their review
 
@@ -144,7 +165,8 @@ This process has many direct and indirect benefits.
 
 7. Regardless of approval, the writer will respond to the reviewers comments (if there are any), and a discussion may ensue.
 
-   - **Note**: Most often, the writer is the project owner. This means they have final say in what changes are incorporated.
+   - **Note**: Most often, the writer is the project owner.
+   This means they have final say in what changes are incorporated.
 
      - In rare cases, if there is a disagreement that cannot be resolved, involve the PI.
 
@@ -163,4 +185,5 @@ This process has many direct and indirect benefits.
 |                  | _Organization_                     |                                                                              Standard package organization                                                                              | Module-based sequences that depend on prior steps                                                                                                                               | Store critical intermediate data in different forms, or, if too large, include access instructions               |
 | **Sharing**      | _Version control and citable code_ |                                              Maintain version on common package installers (e.g. pip, conda); include citation instructions                                             | Mint a DOI using zenodo per release; Github releases track paper submissions                                                                                                    | Mint a DOI using zenodo per release; Github releases track full pipelines                                        |
 
-**Table 1:** Creating, contributing, and sharing software, analysis, and data repositories. \*See details on code review below
+**Table 1:** Creating, contributing, and sharing software, analysis, and data repositories.
+*See details on code review below

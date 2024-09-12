@@ -1,4 +1,5 @@
-A suitable and flexible data management plan is essential for effective and trustworthy science. Our goals with this strategy is to maximize access, understanding, analysis speed, and provenance while reducing access barriers, unnecessary storage bloat, and cost. 
+A suitable and flexible data management plan is essential for effective and trustworthy science.
+Our goals with this strategy is to maximize access, understanding, analysis speed, and provenance while reducing access barriers, unnecessary storage bloat, and cost. 
 
 ## 1. Data perspectives
 
@@ -10,28 +11,42 @@ We think of data from three different perspectives:
 
 3. Flow
 
-Each perspective requires different considerations for storage, access, and provenance management. Management practices for microscopy images are related to other data types, with some nuance.
+Each perspective requires different considerations for storage, access, and provenance management.
+Management practices for microscopy images are related to other data types, with some nuance.
 
 
 ### Level
 
-Your data level indicates the processing stage. For example, the lowest data level, or “raw” data, are the images acquired by the microscope. Technically, the biological substrate is the “rawest” data, but we consider the digitization of biological data to be the lowest level.
+Your data level indicates the processing stage.
+For example, the lowest data level, or “raw” data, are the images acquired by the microscope.
+Technically, the biological substrate is the “rawest” data, but we consider the digitization of biological data to be the lowest level.
 
-With biological data, there are many different kinds of intermediate data. Intermediate data are typically different sizes and thus have different storage requirements. Each intermediate data type requires unique considerations for access frequency, dissemination, and versioning.
+With biological data, there are many different kinds of intermediate data.
+Intermediate data are typically different sizes and thus have different storage requirements.
+Each intermediate data type requires unique considerations for access frequency, dissemination, and versioning.
 
 
 ### Origin
 
-Where your data come from also requires unique management policies. We use data originating from collaborators (both academic and industry) and data already in the public domain. Eventually, we will use data that we ourselves collect, but for the moment, we can ignore this origin category. 
+Where your data come from also requires unique management policies.
+We use data originating from collaborators (both academic and industry) and data already in the public domain.
+Eventually, we will use data that we ourselves collect, but for the moment, we can ignore this origin category. 
 
-We need to consider access requirements and restrictions, particularly when using collaborator data. When storing restricted data, it is helpful to remember that all data will eventually be in the public domain.
+We need to consider access requirements and restrictions, particularly when using collaborator data.
+When storing restricted data, it is helpful to remember that all data will eventually be in the public domain.
 
 
 ### Flow
 
-Besides the most raw form, data are dynamic and pluripotent; always awaiting new and improved processing capabilities. We need to understand how each specific data level was processed at the specific moment in time (data provenance), and where each data level is ultimately heading for longer term storage. We also need capabilities to quickly reprocess these data with new approaches. Consider each data processing step as a new research project, waiting for improvement.
+Besides the most raw form, data are dynamic and pluripotent; always awaiting new and improved processing capabilities.
+We need to understand how each specific data level was processed at the specific moment in time (data provenance), and where each data level is ultimately heading for longer term storage.
+We also need capabilities to quickly reprocess these data with new approaches.
+Consider each data processing step as a new research project, waiting for improvement.
 
-Flow also refers to users and data demand. We need to consider data analysis activity at each particular moment. For example, if the data are actively being worked on, multiple people should have immediate access. We need to align data access demand with storage solutions and computability.
+Flow also refers to users and data demand.
+We need to consider data analysis activity at each particular moment.
+For example, if the data are actively being worked on, multiple people should have immediate access.
+We need to align data access demand with storage solutions and computability.
 
 ## 2. Storage solutions
 
@@ -76,7 +91,12 @@ From the raw microscopy image to the variable intermediate data types including 
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXczKrIlDaJcbfepo0Km4Ufg8grJ0uteSY-0kD4vx_5Xx7ltcLy6aynpYT4MtLISje7v2-XcenqQPOOkPjwHLHZixS4H06VPTH9157Ip4eHhqzn8Xsg9dyUkJuoNgMeaf22yjlPIb7MxQy4oeJ35CoY_pgg?key=rpenezTpWGC_QZlunxvYgg)
 
-Starting with microscopy images, we apply a QC pipeline to select and correct microscopy images for downstream analysis. Next, we apply segmentation pipelines to isolate individual single cells, which form segmentation masks. We have the option to apply a single cell image extraction pipeline to form a dataset of isolated single cell images. We apply representation learning pipelines to extract morphology features from some combination of the corrected microscopy image, segmentation mask, or isolated single cell images. Finally, we apply an aggregated bulk pipeline to turn the single cell morphology embeddings into aggregated bulk embeddings. Importantly, we have different short, mid, and long term storage and sharing solutions for each data type.
+Starting with microscopy images, we apply a QC pipeline to select and correct microscopy images for downstream analysis.
+Next, we apply segmentation pipelines to isolate individual single cells, which form segmentation masks.
+We have the option to apply a single cell image extraction pipeline to form a dataset of isolated single cell images.
+We apply representation learning pipelines to extract morphology features from some combination of the corrected microscopy image, segmentation mask, or isolated single cell images.
+Finally, we apply an aggregated bulk pipeline to turn the single cell morphology embeddings into aggregated bulk embeddings.
+Importantly, we have different short, mid, and long term storage and sharing solutions for each data type.
 
 |                                                                                        |               |                     |                 |                 |                                                                                                                                              |                                                                                                                                                                      |
 | -------------------------------------------------------------------------------------- | ------------- | ------------------- | --------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

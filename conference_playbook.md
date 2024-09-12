@@ -1,6 +1,7 @@
 ## Purpose
 
-Scientific conferences are an important part of the scientific enterprise. We attend scientific conferences to disseminate our work, exchange ideas, learn about new fields and approaches, meet new people, catch up with old friends, hone our scientific communication, and have fun.
+Scientific conferences are an important part of the scientific enterprise.
+We attend scientific conferences to disseminate our work, exchange ideas, learn about new fields and approaches, meet new people, catch up with old friends, hone our scientific communication, and have fun.
 
 
 ## How to decide attendance
@@ -25,11 +26,13 @@ So you’re thinking of attending a conference? Great! Ask yourself these questi
 
 9. Are there remote attendance options? 
 
-It is not always an appropriate time to attend a conference. Sometimes, our time is more valuable wrapping up a project, focusing on new work, or preparing for an even greater opportunity.
+It is not always an appropriate time to attend a conference.
+Sometimes, our time is more valuable wrapping up a project, focusing on new work, or preparing for an even greater opportunity.
 
 _If you are thinking about attending a conference, please reach out to Greg (PI) to discuss if attendance makes sense._
 
-In nearly every case, it only makes sense to attend a conference if you are presenting. **Presentation is a requirement for the Waylab to cover the costs of conference attendance** (with one exception - see below)**.**
+In nearly every case, it only makes sense to attend a conference if you are presenting.
+**Presentation is a requirement for the Waylab to cover the costs of conference attendance** (with one exception - see below)**.**
 
 In order of value, presentations include:
 
@@ -149,9 +152,13 @@ The invited talks sometimes may include an honorarium.
 
 > :exclamation: **Waylab Specific**: This may not apply to other labs!
 
-The lab will cover all reasonable costs for conference attendance. This includes transportation, meals, registration, and incidentals. Please ask questions. **_Please save receipts as they could be required._**
+The lab will cover all reasonable costs for conference attendance.
+This includes transportation, meals, registration, and incidentals.
+Please ask questions.
+**_Please save receipts as they could be required._**
 
-We use a service called [Concur](https://www.ucdenver.edu/offices/provost/office-of-the-provost/hr-and-finance-toolbox-home/procurement-and-travel/travel#ac-pre-travel-0) to track reimbursements and travel requests. Concur is where you will document all conference related expenses that require reimbursement.
+We use a service called [Concur](https://www.ucdenver.edu/offices/provost/office-of-the-provost/hr-and-finance-toolbox-home/procurement-and-travel/travel#ac-pre-travel-0) to track reimbursements and travel requests.
+Concur is where you will document all conference related expenses that require reimbursement.
 
 **Note:** When prompted to include the 6-digit SpeedType, please use **_63503956_** as this will charge the Way Lab account.
 
@@ -201,7 +208,8 @@ The steps for paying/reimbursement include:
 
 6. Book lodging (if applicable)
 
-   1. Often the conference offers a discounted hotel block/code. Use this code and book early to ensure accommodations
+   1. Often the conference offers a discounted hotel block/code.
+   Use this code and book early to ensure accommodations
 
    2. You will need to book this yourself and pay this out of pocket
 

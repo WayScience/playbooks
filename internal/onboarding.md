@@ -130,7 +130,7 @@ We primarily use Zoom for video calls when in-person discussions are not possibl
 
 **In person**
 There is no substitute to in-person discussions.
-While internal, quick communication should exist on slack, more complex and nuanced topics should be discussed in person.
+While internal, quick communication should exist on Discord, more complex and nuanced topics should be discussed in person.
 Zoom will be the substitute to in person communications when necessary.
 
 ### Physical space

@@ -1,4 +1,5 @@
-In a hybrid working world, we require solutions to use our powerful computers from anywhere. CU Anschutz OIT office has a solution for us. Follow these steps to enable ssh or remote desktop access.
+In a hybrid working world, we require solutions to use our powerful computers from anywhere. CU Anschutz OIT office has a solution for us.
+Follow these steps to enable ssh or remote desktop access.
 
 # Secure Socket Shell (SSH)
 
@@ -54,7 +55,7 @@ In a hybrid working world, we require solutions to use our powerful computers fr
 
 - Once download it, open up Global Protect VPN
 
-  - Enter CU anschutz username and password (This step assumes you have already follow the installation instructions)  
+  - Enter CU anschutz username and password (this step assumes you have already follow the installation instructions)  
 
   - Once you see the \`connected\` message, your VPN is active! 
 
@@ -156,7 +157,9 @@ This will allow you to write and execute code to a remote computer through vscod
 
 - This password is the same password you use to log into your Waylab machine. 
 
-**Step 2E**. After entering your password, the IP address should appear at the bottom left corner. This means you are connected to the remote machine via VScode! Next step is to look for the directory where you want to start coding! 
+**Step 2E**. After entering your password, the IP address should appear at the bottom left corner.
+This means you are connected to the remote machine via VScode!
+Next step is to look for the directory where you want to start coding! 
 
 **Step 2F**. To exit out from the remote editor, click on the IP address at the bottom left corner of your editor and click “close remote connection” 
 
@@ -174,7 +177,8 @@ This will allow you to remote-desktop access Way Lab computer from another compu
 
  **Step 1C**. Select “Set up via SSH” from menu on left of Chrome Remote Desktop home screen.
 
- **Step 1D**. Follow steps to set up via SSH. May need to create a remote desktop pin for Google account by clicking “remote access” before being able to login to remote desktop on Way Lab computer.
+ **Step 1D**. Follow steps to set up via SSH.
+May need to create a remote desktop pin for Google account by clicking “remote access” before being able to login to remote desktop on Way Lab computer.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcbU2lEMn3D_OgxfvWRHEksZuZ7SB1fdN1tIBFwAS6vXvm6Wzn9CIGuIgcnopK3UJi_aS0V6LGbRXln2Elg6Ev-pNFliAmXfJMKr-DxTk8cXdffPUjpEbhiUfzLfyUGl-rw4JzmA6VkeTrRidHteTsCeAbz?key=TLjRbfzMIq3LlXZ5yB1O3Q)
 
@@ -187,12 +191,16 @@ This will allow you to remote-desktop access Way Lab computer from another compu
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXUCNBC4W7p4JxETYC5rB5pIPjLPICRJptyRl7pugZxNsi8ofhcQz7UfMcrjisk45Xn7biQtKvCQu2lGgQlT3aG0S3UjZgr3RzSLbtW_kfwZYfnb1TUT9zoAc3GKTFnotRYcpkt01hld08zJsNBmA6UsYI?key=TLjRbfzMIq3LlXZ5yB1O3Q)
 
-**Step 2C**. Upon first connection, select Pop OS for loading and enter Way Lab computer password when prompted. If any POP OS authentication does not work, click “cancel”. Some authentications do not seem to work but remote desktop still works. Might have to click cancel multiple times.
+**Step 2C**. Upon first connection, select Pop OS for loading and enter Way Lab computer password when prompted.
+If any POP OS authentication does not work, click “cancel”.
+Some authentications do not seem to work but remote desktop still works.
+Might have to click cancel multiple times.
 
 
 # Microsoft Remote Desktop and xRDP
 
-This will allow you to remote into a Way Lab Computer to use the desktop and all of the applications. This is an alternative to the Chrome Remote Desktop if that doesn’t work for your machine (this method requires VPN).
+This will allow you to remote into a Way Lab Computer to use the desktop and all of the applications.
+This is an alternative to the Chrome Remote Desktop if that doesn’t work for your machine (this method requires VPN).
 
 Important Note: Make sure you are logged out of your account as you can not use this method if you are still logged in on your Way Lab computer.
 
@@ -214,28 +222,38 @@ Important Note: Make sure you are logged out of your account as you can not use 
 
 **Step 2A**. On your home computer, install Microsoft Remote Desktop from your computer's specific digital distribution platform (e.g. App Store for Mac, etc.).
 
-**Step 2B**. After opening the application, it should open the prompt to add a PC. If not, click the “+” button and click “Add PC” to pull up the prompt. 
+**Step 2B**. After opening the application, it should open the prompt to add a PC.
+If not, click the “+” button and click “Add PC” to pull up the prompt. 
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcXyxu0us_aA8zla7FnGS9TNdvo00OCIiHj3HbeDoh-m3dG4cvPOo9WkpRjRBDejYTRbQnAjVLdyczc0uMUI8_ZszFibsYwxZ-7NMiR0L4fvpeJPJ91943mckj1xOnvHNykLQR3Bcst_7m3shBTXcElqZSI?key=TLjRbfzMIq3LlXZ5yB1O3Q)
 
-**Step 2C**. Make sure you are connected to the University VPN before inputting the information. Once you have inputted the info, click “add”. 
+**Step 2C**. Make sure you are connected to the University VPN before inputting the information.
+Once you have inputted the info, click “add”. 
 
-Note: It might give you a warning saying “The identity of the remote PC can't be verified. Do you want to connect anyway?”. Just connect anyway and select the do not ask for this PC again option.
+Note: It might give you a warning saying “The identity of the remote PC can't be verified.
+Do you want to connect anyway?”.
+Just connect anyway and select the do not ask for this PC again option.
 
-**Step 2D**. Put the username and password to the Way Lab computer and hit continue.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfq7__jrSW3vMMay0t0aGxXGVdGDlBqCB7QfxshrxoitUZt0OQhzjzQQa4AMPfIQr8che3bFOE8DkQe3YfUo8xMYE63A9-EBLZrWfovWMvAdStsDRPPnjp8r6bmiRXIeR9AreKQVS08Ta17EXHH8omH3I4y?key=TLjRbfzMIq3LlXZ5yB1O3Q)
+**Step 2D**. Put the username and password to the Way Lab computer and hit continue.
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfq7__jrSW3vMMay0t0aGxXGVdGDlBqCB7QfxshrxoitUZt0OQhzjzQQa4AMPfIQr8che3bFOE8DkQe3YfUo8xMYE63A9-EBLZrWfovWMvAdStsDRPPnjp8r6bmiRXIeR9AreKQVS08Ta17EXHH8omH3I4y?key=TLjRbfzMIq3LlXZ5yB1O3Q)
 
 **Step 2E**. Now you can use your computer! Make sure to log out after you have done remoting into the Way Lab computer.
 
 
 # How to reboot your machine remotely
 
-If your remote machine ends up freezing or you forgot to log out of your machine before leaving work and now you can’t log into to your remote session, then these instructions are for you! This will show you how to use ssh in terminal to reboot your machine.
+If your remote machine ends up freezing or you forgot to log out of your machine before leaving work and now you can’t log into to your remote session, then these instructions are for you!
+This will show you how to use ssh in terminal to reboot your machine.
 
 **Step 1**. Use ssh to remote into the machine terminal (see full instructions above).
 
 - Example: `ssh username:IP-address`
 
-**Step 2**. Try to make sure any jobs you are running have finished unless you are okay with it stopping a run. The example below shows that the run had completed since there are two SQLite files in the folder.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfEatcZ7pGjZ0np1GpOx1W6eYCayPOOPOqajAEk339hmP2fMn4IX5RhuqtgfxeMQ2gN41tn0p-74Rbxqw0T4zHXLyu71P6olPTXOhkrJU0DGeqL4HOpRsnKxIVmy0H6Qz6rT35f01Enu2cBWLD0zA0f63NJ?key=TLjRbfzMIq3LlXZ5yB1O3Q)
+**Step 2**. Try to make sure any jobs you are running have finished unless you are okay with it stopping a run.
+The example below shows that the run had completed since there are two SQLite files in the folder.
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfEatcZ7pGjZ0np1GpOx1W6eYCayPOOPOqajAEk339hmP2fMn4IX5RhuqtgfxeMQ2gN41tn0p-74Rbxqw0T4zHXLyu71P6olPTXOhkrJU0DGeqL4HOpRsnKxIVmy0H6Qz6rT35f01Enu2cBWLD0zA0f63NJ?key=TLjRbfzMIq3LlXZ5yB1O3Q)
 
 **Step 3:** Perform the reboot using the command: `sudo reboot`
 
