@@ -1,4 +1,5 @@
-We are biomedical data scientists who use code to answer biological hypotheses and explore biological data. It is therefore important to define how we use, write, and share code. 
+We are biomedical data scientists who use code to answer biological hypotheses and explore biological data.
+It is therefore important to define how we use, write, and share code. 
 
 ## 1. Using code
 
