@@ -1,5 +1,6 @@
-# playbooks
-Playbooks relevant to the operations of the Way Lab and similar labs.
+# Playbooks
+
+Playbooks relevant to Way Lab operations.
 
 
 Top-level playbooks have information which may be relevant to other computational labs.
