@@ -76,7 +76,9 @@ We also make sure that this link between the pipeline and data is itself version
 
 This process ensures that our data can be easily reprocessed by updated bioinformatics methods with new and improved methods.
 
-Examples: [cell-health-data](https://github.com/WayScience/cell-health-data), [nf1_cellpainting_data](https://github.com/WayScience/nf1_cellpainting_data), [CFReT_data](https://github.com/WayScience/CFReT_data).
+Examples from NF1 publication: 
+- ML and bioinformatics pipeline: [nf1_schwann_cell_morphology_signature](https://github.com/WayScience/nf1_schwann_cell_morphology_signature)
+- Data and image profiling: [nf1_schwann_cell_painting_data](https://github.com/WayScience/nf1_schwann_cell_painting_data)
 
 ## 2. Considerations for each kind of Github repository
 
