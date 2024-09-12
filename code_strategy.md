@@ -30,6 +30,8 @@ Whether a software project, data analysis project, or data project, you must org
 
 ### 4. Waylab Specific Conventions
 
+> :grey_exclamation: **Waylab-Specific**: This may not apply to other labs!
+
 Waylab code should (usually) follow these conventions for readable, functional code. Note that these conventions will change as the field of biomedical data science evolves and improves.
 
 1. Use [formatted string literals (f-strings)](https://docs.python.org/3/tutorial/inputoutput.html#tut-f-strings) to concatenate or insert information into strings.
