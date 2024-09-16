@@ -177,4 +177,4 @@ We will trust the data we analyze, trust the results of our experiments, and we 
 ### Code of Conduct
 
 We abide by the Code of Conduct as set forth by the CU Anschutz and Center for Health AI communities.
-Please also read our lab's [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) document for more specific details.
+Please also read our lab's [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md) document for more specific details.
