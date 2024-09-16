@@ -1,5 +1,7 @@
+# Code Strategy
+
 We are biomedical data scientists who use code to answer biological hypotheses and explore biological data.
-It is therefore important to define how we use, write, and share code. 
+It is therefore important to define how we use, write, and share code.
 
 ## 1. Using code
 
@@ -38,7 +40,7 @@ Good code is readable.
 Based on the logic, variable names, and documentation, anyone (especially you!) should be able to understand what your code is doing.
 Readability also means standard formatting.
 We always lint our code, and use automatic formatting wherever possible (e.g. [python black](https://github.com/psf/black)).
-We use pre-commit hooks to ensure our code follows conventions before commiting.
+We use pre-commit hooks to ensure our code follows conventions before committing.
 
 ### 3. Code should be well organized (maintainable)
 
@@ -54,12 +56,10 @@ Waylab code should (usually) follow these conventions for readable, functional c
 Note that these conventions will change as the field of biomedical data science evolves and improves.
 
 1. Use [formatted string literals (f-strings)](https://docs.python.org/3/tutorial/inputoutput.html#tut-f-strings) to concatenate or insert information into strings.
+1. Use [pathlib](https://docs.python.org/3/library/pathlib.html) to represent file-system paths.
+1. Save intermediate files in parquet (`.parquet`) format when possible.
 
-2. Use [pathlib](https://docs.python.org/3/library/pathlib.html) to represent file-system paths.
-
-3. Save intermediate files in parquet (`.parquet`) format when possible.
-
-In general, we follow these [10 simple rules for reproducible computational research](https://doi.org/10.1371/journal.pcbi.1003285). 
+In general, we follow these [10 simple rules for reproducible computational research](https://doi.org/10.1371/journal.pcbi.1003285).
 
 ## 3. Sharing code
 
@@ -95,7 +95,6 @@ Reviewing code can be tricky.
 It is important to understand someone else's code and goals, but also to let their own style shine through their work.
 We strive for individuality, understanding, and accuracy, so if you are able to spot a bug (or the potential for one), please highlight in a concise review.
 
-
 ### Code review checklist
 
 - [ ] Do you understand the code’s intention?
@@ -121,7 +120,7 @@ We strive for individuality, understanding, and accuracy, so if you are able to 
 Having someone else look at your code can be scary and intimidating!
 The Waylab PI (Greg) will review your first couple pull requests to ease you into this process. However, with the lab growing and projects expanding, lab-wide pull requests are necessary.
 Work with Greg to find a pull request buddy, who will quickly become an expert on, and a cheerleader for, your project.
-Alternatively, post your pull request in the `pull-request-review` Discord channel. 
+Alternatively, post your pull request in the `pull-request-review` Discord channel.
 
 Please make your pull requests easy to review.
 They should be concise, clearly documented, and only change a minimum number of topics (ideally, 1 core change per PR).
@@ -149,14 +148,14 @@ The methodology is as follows:
 
 1. Create a new branch from _main_ for the entire refactor
 
-2. Create a new branch from the entire refactor branch for a specific change
+1. Create a new branch from the entire refactor branch for a specific change
 
-3. File a PR from this change-specific branch into the entire refactor branch
+1. File a PR from this change-specific branch into the entire refactor branch
 
-4. Someone will review your PR and after approval…
+1. Someone will review your PR and after approval…
 
-5. Squash merge the change-specific branch into the entire refactor branch
+1. Squash merge the change-specific branch into the entire refactor branch
 
-6. Repeat 2-5 for all “chunks of change”
+1. Repeat 2-5 for all “chunks of change”
 
-7. Finally, once all the changes are introduced, file a PR from the entire refactor branch into _main_!
+1. Finally, once all the changes are introduced, file a PR from the entire refactor branch into _main_!

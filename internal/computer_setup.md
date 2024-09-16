@@ -1,8 +1,9 @@
+# Computer Setup
+
 The Way Lab uses Linux distributions for our primary research computing.
 Follow these instructions to set up your computer for the first time.
 If you’re stuck, ask questions.
 All of these steps are likely to change in the future, and, if there are any incomplete or missing details, please modify.
-
 
 ## Step 0 - Build your machine!
 
@@ -12,21 +13,19 @@ In case you are curious, our builds are based off of [these parts](https://pcpar
 If you do need to build your machine, you’re not on your own.
 You will work with Greg or other lab members to complete the build.
 
-
 ## Step 1 - Install the operating system
 
 We are currently experimenting with [Pop!\_OS](https://pop.system76.com/), an open source Ubuntu-based operating system built for STEM.
 They’re [located](https://www.google.com/maps/place/System76/@39.7739202,-104.8288135,15z/data=!4m5!3m4!1s0x0:0xf63fca1ea6015d75!8m2!3d39.7739112!4d-104.8288302) just north of Anschutz as well.
 
 Ask Greg, or another lab member, for the live USB.
-The USB contains instructions for your new build to install version 20.04 of Pop!\_OS. 
+The USB contains instructions for your new build to install version 20.04 of Pop!\_OS.
 
 **Alternative** - If no live USB is available: Visit this [website](https://pop.system76.com/) and click \`download\`.
 We use the latest LTS, and, depending on Step 0, you may install the version with pre-loaded NVIDIA GPU drivers.
 This click will download a \`.iso\` file. Download and open balenaEtcher, and, using a fresh USB (Note: it will delete everything on it already!) follow the prompts to move and format the \`.iso\` on the fresh USB.
 
 Plug the USB into the new machine.
-
 
 ### Step 1.1 - Enter boot mode after powering on
 
@@ -36,12 +35,10 @@ If you’ve successfully entered the menu with the proper USB drive, you will se
 
 Click the proper USB drive, and the operating system will install.
 
-
 ### Step 1.1 - Greg will set up using his account
 
 Greg will enter his credentials so that he always has access to all machines.
 Don’t worry, we’ll set up your own account soon!
-
 
 ## Step 2 - Install core software
 

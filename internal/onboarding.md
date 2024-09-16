@@ -24,7 +24,7 @@ We will primarily focus on cancer research in our internal projects, and we will
 We will establish morphology as a systems biology measurement rivaling molecular readouts in mechanistic information content.
 We will understand, with greater detail, how the central dogma of biology links and interacts with other, higher-order biological manifestations, like morphology.
 
-As research capabilities evolve, new approaches crystalize, and the most pressing problems of tomorrow manifest, we will be ready.
+As research capabilities evolve, new approaches crystallize, and the most pressing problems of tomorrow manifest, we will be ready.
 
 ## Expectations
 
@@ -81,23 +81,28 @@ If at any point you would like to experiment to improve lab policies, please mak
 We hold three kinds of regularly scheduled meetings:
 
 1. One-on-ones
-  - Once per week.
-  - In these meetings, the PI will meet with each individual lab member for one hour and discuss research updates and anything else pertinent to the lab member's success.
-  - We will schedule these at the beginning of each semester.
-  - We will try to hold all these one-on-one meetings on a single day during core hours.
+
+- Once per week.
+- In these meetings, the PI will meet with each individual lab member for one hour and discuss research updates and anything else pertinent to the lab member's success.
+- We will schedule these at the beginning of each semester.
+- We will try to hold all these one-on-one meetings on a single day during core hours.
+
 2. Lab meetings
-  - Once per week.
-  - We have two different kinds of lab meetings: (1) Journal clubs and (2) Research round tables
-  - A journal club presentation consists of either: (A) a deep dive into a single paper, or (B) a quick pass through five different papers extracting out the core message of each.
-    - For all journal clubs, the presenter must make the paper's implications to the lab clear.
-    - The papers selected must be from a group of papers published since the last presentation.
-  - A research round table presentation consists of either: (A) a research in progress, or (B) a white-board brain storming session.
-    - For all research round tables, the presenter will lead the discussion and expect lots of questions from other lab members
-    - All other lab members not presenting are expected to critically engage with the material
+
+- Once per week.
+- We have two different kinds of lab meetings: (1) Journal clubs and (2) Research round tables
+- A journal club presentation consists of either: (A) a deep dive into a single paper, or (B) a quick pass through five different papers extracting out the core message of each.
+  - For all journal clubs, the presenter must make the paper's implications to the lab clear.
+  - The papers selected must be from a group of papers published since the last presentation.
+- A research round table presentation consists of either: (A) a research in progress, or (B) a white-board brain storming session.
+  - For all research round tables, the presenter will lead the discussion and expect lots of questions from other lab members
+  - All other lab members not presenting are expected to critically engage with the material
+
 3. Stand-up
-  - Twice per week: Monday and Friday mornings
-  - We use scrum for project management and time management.
-  - Every member participates and discusses what they are working on this week (or what they accomplished) and if anybody is "blocking" them from their tasks.
+
+- Twice per week: Monday and Friday mornings
+- We use scrum for project management and time management.
+- Every member participates and discusses what they are working on this week (or what they accomplished) and if anybody is "blocking" them from their tasks.
 
 We can also schedule ad-hoc meetings if any lab member needs to practice a presentation, or needs group feedback outside of the normally scheduled meetings.
 
