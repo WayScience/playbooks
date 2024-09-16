@@ -1,5 +1,7 @@
+# Data Strategy
+
 A suitable and flexible data management plan is essential for effective and trustworthy science.
-Our goals with this strategy is to maximize access, understanding, analysis speed, and provenance while reducing access barriers, unnecessary storage bloat, and cost. 
+Our goals with this strategy is to maximize access, understanding, analysis speed, and provenance while reducing access barriers, unnecessary storage bloat, and cost.
 
 ## 1. Data perspectives
 
@@ -7,13 +9,12 @@ We think of data from three different perspectives:
 
 1. Level
 
-2. Origin
+1. Origin
 
-3. Flow
+1. Flow
 
 Each perspective requires different considerations for storage, access, and provenance management.
 Management practices for microscopy images are related to other data types, with some nuance.
-
 
 ### Level
 
@@ -25,16 +26,14 @@ With biological data, there are many different kinds of intermediate data.
 Intermediate data are typically different sizes and thus have different storage requirements.
 Each intermediate data type requires unique considerations for access frequency, dissemination, and versioning.
 
-
 ### Origin
 
 Where your data come from also requires unique management policies.
 We use data originating from collaborators (both academic and industry) and data already in the public domain.
-Eventually, we will use data that we ourselves collect, but for the moment, we can ignore this origin category. 
+Eventually, we will use data that we ourselves collect, but for the moment, we can ignore this origin category.
 
 We need to consider access requirements and restrictions, particularly when using collaborator data.
 When storing restricted data, it is helpful to remember that all data will eventually be in the public domain.
-
 
 ### Flow
 
@@ -56,34 +55,33 @@ We consider three categories of potential storage solutions for data:
 
    1. Internal hard drive
 
-   2. External hard drive
+   1. External hard drive
 
-2. Cloud storage
+1. Cloud storage
 
    1. Image Data Resource (IDR)
 
-   2. Amazon/GC/Azure
+   1. Amazon/GC/Azure
 
-   3. Figshare/Figshare+
+   1. Figshare/Figshare+
 
-   4. Zenodo
+   1. Zenodo
 
-   5. Github
+   1. Github
 
-   6. Github LFS
+   1. Github LFS
 
-   7. DVC
+   1. DVC
 
-   8. Colorado local cluster
+   1. Colorado local cluster
 
-   9. One Drive/Dropbox/Google drive
+   1. One Drive/Dropbox/Google drive
 
-3. No storage
+1. No storage
 
    1. Immediate deletion
 
 Each storage solution has trade-offs in terms of longevity, access, usage speed, version control, size restrictions, and cost (**Table 1**).
-
 
 ## 3. Microscopy Data Levels
 
@@ -98,23 +96,23 @@ We apply representation learning pipelines to extract morphology features from s
 Finally, we apply an aggregated bulk pipeline to turn the single cell morphology embeddings into aggregated bulk embeddings.
 Importantly, we have different short, mid, and long term storage and sharing solutions for each data type.
 
-|                                                                                        |               |                     |                 |                 |                                                                                                                                              |                                                                                                                                                                      |
-| -------------------------------------------------------------------------------------- | ------------- | ------------------- | --------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Solution**                                                                           | **Longevity** | **Version Control** | **Access**      | **Usage speed** | **Size limits**                                                                                                                              | **Cost**                                                                                                                                                             |
-| [Internal hard drive](https://www.dpbestflow.org/data-storage-hardware/hard-drive-101) | Intermediate  | No                  | Private         | Instant         | <= 18TB (Total)                                                                                                                              | \~$15 per TB one time cost ([Details](https://diskprices.com/))                                                                                                      |
-| External hard drive                                                                    | High          | No                  | Private         | Download        | <= 18TB (Total)                                                                                                                              | \~$15 per TB one time cost ([Details](https://diskprices.com/))                                                                                                      |
-| [IDR](https://idr.openmicroscopy.org/)                                                 | High          | Yes                 | Public          | Download        | >= 2TB (Per dataset)                                                                                                                         | Free                                                                                                                                                                 |
-| AWS/GC/Azure                                                                           | Low           | Yes                 | Public/Private  | Instant         | >= 2TB (Per dataset)                                                                                                                         | $0.02 - $0.04 per GB / Month ($40 to $80 per month per 2TB dataset)                                                                                                  |
-| [Figshare](https://figshare.com/)                                                      | High          | Yes                 | Public          | Download        | 20GB (Total)                                                                                                                                 | Free ([Details](https://help.figshare.com/article/figshare-account-limits))                                                                                          |
-| [Figshare+](https://knowledge.figshare.com/plus)                                       | High          | Yes                 | Public          | Download        | 250GB > x > 5TB (Per dataset)                                                                                                                | $745 > x > $11,860 one time cost ([Details](https://knowledge.figshare.com/plus))                                                                                    |
-| [Zenodo](https://zenodo.org/)                                                          | High          | Yes                 | Public          | Download        | >= 50GB (Per dataset)                                                                                                                        | Free ([Details](https://help.zenodo.org/))                                                                                                                           |
-| Github                                                                                 | High          | Yes                 | Public/Private  | Instant         | >= 100MB (Per file) ([Details](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)) | Free                                                                                                                                                                 |
-| Github LFS                                                                             | Intermediate  | Yes                 | Public/Private  | Instant         | >= 2GB (up to 5GB for paid plans)                                                                                                            | 50GB data pack for $5 per month ([Details](https://docs.github.com/en/billing/managing-billing-for-git-large-file-storage/about-billing-for-git-large-file-storage)) |
-| DVC                                                                                    | Intermediate  | Yes                 | Public/Private  | Download        | None                                                                                                                                         | Cost of linked service (AWS/Azure/GC)                                                                                                                                |
-| One drive                                                                              | Low           | Yes                 | Private         | Instant         | >= 5TB (Total)                                                                                                                               | Free to AMC                                                                                                                                                          |
-| Dropbox                                                                                | Low           | Yes                 | Public/Private  | Instant         | >= 5TB (Total)                                                                                                                               | $12.50 per user / month ([Details](https://www.dropbox.com/plans))                                                                                                   |
-| Google drive                                                                           | Low           | Yes                 | Public/Private  | Instant         | >= 5TB (Total)                                                                                                                               | $25 per month ([Details](https://one.google.com/about/plans))                                                                                                        |
-| Local cluster (RMACC)                                                                  | Intermediate  | No                  | Private         | Instant         |                                                                                                                                              |                                                                                                                                                                      |
-| Immediate deletion                                                                     | None          | None                | None            | None            | None                                                                                                                                         | None                                                                                                                                                                 |
+|                                                                                        |               |                     |                |                 |                                                                                                                                              |                                                                                                                                                                      |
+| -------------------------------------------------------------------------------------- | ------------- | ------------------- | -------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Solution**                                                                           | **Longevity** | **Version Control** | **Access**     | **Usage speed** | **Size limits**                                                                                                                              | **Cost**                                                                                                                                                             |
+| [Internal hard drive](https://www.dpbestflow.org/data-storage-hardware/hard-drive-101) | Intermediate  | No                  | Private        | Instant         | \<= 18TB (Total)                                                                                                                             | ~$15 per TB one time cost ([Details](https://diskprices.com/))                                                                                                       |
+| External hard drive                                                                    | High          | No                  | Private        | Download        | \<= 18TB (Total)                                                                                                                             | ~$15 per TB one time cost ([Details](https://diskprices.com/))                                                                                                       |
+| [IDR](https://idr.openmicroscopy.org/)                                                 | High          | Yes                 | Public         | Download        | >= 2TB (Per dataset)                                                                                                                         | Free                                                                                                                                                                 |
+| AWS/GC/Azure                                                                           | Low           | Yes                 | Public/Private | Instant         | >= 2TB (Per dataset)                                                                                                                         | $0.02 - $0.04 per GB / Month ($40 to $80 per month per 2TB dataset)                                                                                                  |
+| [Figshare](https://figshare.com/)                                                      | High          | Yes                 | Public         | Download        | 20GB (Total)                                                                                                                                 | Free ([Details](https://help.figshare.com/article/figshare-account-limits))                                                                                          |
+| [Figshare+](https://knowledge.figshare.com/plus)                                       | High          | Yes                 | Public         | Download        | 250GB > x > 5TB (Per dataset)                                                                                                                | $745 > x > $11,860 one time cost ([Details](https://knowledge.figshare.com/plus))                                                                                    |
+| [Zenodo](https://zenodo.org/)                                                          | High          | Yes                 | Public         | Download        | >= 50GB (Per dataset)                                                                                                                        | Free ([Details](https://help.zenodo.org/))                                                                                                                           |
+| Github                                                                                 | High          | Yes                 | Public/Private | Instant         | >= 100MB (Per file) ([Details](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)) | Free                                                                                                                                                                 |
+| Github LFS                                                                             | Intermediate  | Yes                 | Public/Private | Instant         | >= 2GB (up to 5GB for paid plans)                                                                                                            | 50GB data pack for $5 per month ([Details](https://docs.github.com/en/billing/managing-billing-for-git-large-file-storage/about-billing-for-git-large-file-storage)) |
+| DVC                                                                                    | Intermediate  | Yes                 | Public/Private | Download        | None                                                                                                                                         | Cost of linked service (AWS/Azure/GC)                                                                                                                                |
+| One drive                                                                              | Low           | Yes                 | Private        | Instant         | >= 5TB (Total)                                                                                                                               | Free to AMC                                                                                                                                                          |
+| Dropbox                                                                                | Low           | Yes                 | Public/Private | Instant         | >= 5TB (Total)                                                                                                                               | $12.50 per user / month ([Details](https://www.dropbox.com/plans))                                                                                                   |
+| Google drive                                                                           | Low           | Yes                 | Public/Private | Instant         | >= 5TB (Total)                                                                                                                               | $25 per month ([Details](https://one.google.com/about/plans))                                                                                                        |
+| Local cluster (RMACC)                                                                  | Intermediate  | No                  | Private        | Instant         |                                                                                                                                              |                                                                                                                                                                      |
+| Immediate deletion                                                                     | None          | None                | None           | None            | None                                                                                                                                         | None                                                                                                                                                                 |
 
 **Table 1**: Tradeoffs and considerations for data storage solutions.
