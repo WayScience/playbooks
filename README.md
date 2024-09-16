@@ -1,4 +1,4 @@
-# Way Lab Playbooks
+# Lab Playbooks
 
 Playbooks relevant to Way Lab operations.
 
