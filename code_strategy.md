@@ -24,7 +24,7 @@ However, we are also aware that certain licenses might exist that prevent us fro
 We must look out for these exceptions, and steer clear from using code with restrictive licenses.
 However, if you must include code from a repository under a restrictive license you can either change the license or modify adapted code substantially to avoid conflicts.
 The following flowchart demonstrates the decision process if the adapted code is licensed under a GPL-3 license:
-![Licensing Flowchart](images/using_code.png)
+![Process for adapting code under a restrictive license.](images/using_code.png)
 
 ## 2. Writing code
 
