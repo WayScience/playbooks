@@ -57,6 +57,8 @@ We also include code for generating all publication quality figures as the last 
 
 We use software libraries in these analyses, and we save specific versions in conda environment files or docker containers.
 We also must specify the license, present a clear README with reproducibility/usage instructions, a brief summary of the results, and citation instructions.
+We suggest following the flowchart below to choose a license when creating a repository:
+![Process for choosing a repository license.](images/selecting_a_license.png)
 
 Analysis repositories must be included in our publications, and we consider them to be the ground truth methods section. The analyses must be fully reproducible (we aim for [Gold Reproducibility](https://www.nature.com/articles/s41592-021-01256-7#Sec4)) and open source.
 For each submission and subsequent resubmission, we generate specific “github releases”.
