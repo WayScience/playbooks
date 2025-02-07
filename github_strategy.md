@@ -59,9 +59,10 @@ We use software libraries in these analyses, and we save specific versions in co
 We also must specify the license, present a clear README with reproducibility/usage instructions, a brief summary of the results, and citation instructions.
 We suggest following the flowchart below to choose a license when creating a repository:
 ![Process for choosing a repository license.](images/selecting_a_license.png)
-According to the CU Innovations office when creating or modifying a license you must include the following line (with the appropriate year):
-`Copyright <year> the Regents of the University of Colorado`
-For further questions about licensing requirements contact the CU Innovations Office.
+According to the [CU Innovations office](https://www.cuanschutz.edu/cu-innovations) when creating or modifying a license you must include the following line (with the appropriate year):
+`Copyright (c) <year> the Regents of the University of Colorado`
+For further questions about licensing requirements contact the [CU Innovations Office](https://www.cuanschutz.edu/cu-innovations).
+To generate a license from a template in github follow [this github docs guide](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository)
 
 Analysis repositories must be included in our publications, and we consider them to be the ground truth methods section. The analyses must be fully reproducible (we aim for [Gold Reproducibility](https://www.nature.com/articles/s41592-021-01256-7#Sec4)) and open source.
 For each submission and subsequent resubmission, we generate specific “github releases”.
