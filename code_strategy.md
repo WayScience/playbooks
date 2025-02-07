@@ -22,6 +22,9 @@ We are cautious in using these examples, validating that they work specifically 
 Most of the time, it is safe to assume that all code you can view publicly can be used freely.
 However, we are also aware that certain licenses might exist that prevent us from repurposing other people’s code.
 We must look out for these exceptions, and steer clear from using code with restrictive licenses.
+However, if you must include code from a repository under a restrictive license you can either change the license or modify adapted code substantially to avoid conflicts.
+The following flowchart demonstrates the decision process if the adapted code is licensed under a GPL-3 license:
+![Process for adapting code under a restrictive license.](images/using_code.png)
 
 ## 2. Writing code
 
