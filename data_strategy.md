@@ -97,9 +97,8 @@ We apply representation learning pipelines to extract morphology features from s
 Finally, we apply an aggregated bulk pipeline to turn the single cell morphology embeddings into aggregated bulk embeddings.
 Importantly, we have different short, mid, and long term storage and sharing solutions for each data type.
 
-| | | | | | | |
-| -------------------------------------------------------------------------------------- | ------------- | ------------------- | -------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Solution** | **Longevity** | **Version Control** | **Access** | **Usage speed** | **Size limits** | **Cost** |
+| --- | --- | --- | --- | --- | --- | --- |
 | [Internal hard drive](https://www.dpbestflow.org/data-storage-hardware/hard-drive-101) | Intermediate | No | Private | Instant | \<= 18TB (Total) | ~$15 per TB one time cost ([Details](https://diskprices.com/)) |
 | External hard drive | High | No | Private | Download | \<= 18TB (Total) | ~$15 per TB one time cost ([Details](https://diskprices.com/)) |
 | [IDR](https://idr.openmicroscopy.org/) | High | Yes | Public | Download | >= 2TB (Per dataset) | Free |
