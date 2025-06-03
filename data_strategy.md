@@ -51,35 +51,36 @@ We need to align data access demand with storage solutions and computability.
 
 We consider the following categories of potential storage solutions for data:
 
-1. Local storage
+1. Lab storage
 
    1. Internal hard drive
 
    1. External hard drive
 
-1. Cloud storage
+1. Campus storage
+
+   1. CU Anschutz - Dell PowerScale (Isilon)
+   1. CU Boulder Research Computing - PetaLibrary
+
+1. External storage
 
    1. Image Data Resource (IDR)
 
-   1. Amazon/GC/Azure
+   1. Amazon S3 / Google Cloud Buckets / Azure Blob Storage
 
-   1. Figshare/Figshare+
+   1. Figshare / Figshare+
 
    1. Zenodo
 
    1. Github
 
-   1. Github LFS
+   1. Git Large File Storage (LFS)
 
-   1. DVC
+   1. Data Version Control (DVC)
 
-   1. Colorado local cluster
+   1. CU Boulder Research Computing - High-performance Computing (HPC) Cluster
 
-   1. One Drive/Dropbox/Google drive
-
-1. No storage
-
-   1. Immediate deletion
+   1. OneDrive / Dropbox / Google drive
 
 Each storage solution has trade-offs in terms of longevity, access, usage speed, version control, size restrictions, and cost (**Table 1**).
 
@@ -109,10 +110,10 @@ Importantly, we have different short, mid, and long term storage and sharing sol
 | Github | High | Yes | Public/Private | Instant | >= 100MB (Per file) ([Details](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)) | Free |
 | Github LFS | Intermediate | Yes | Public/Private | Instant | >= 2GB (up to 5GB for paid plans) | 50GB data pack for $5 per month ([Details](https://docs.github.com/en/billing/managing-billing-for-git-large-file-storage/about-billing-for-git-large-file-storage)) |
 | DVC | Intermediate | Yes | Public/Private | Download | None | Cost of linked service (AWS/Azure/GC) |
-| One drive | Low | Yes | Private | Instant | >= 5TB (Total) | Free to AMC |
+| OneDrive | Low | Yes | Private | Instant | >= 5TB (Total) | Free to AMC |
 | Dropbox | Low | Yes | Public/Private | Instant | >= 5TB (Total) | $12.50 per user / month ([Details](https://www.dropbox.com/plans)) |
 | Google drive | Low | Yes | Public/Private | Instant | >= 5TB (Total) | $25 per month ([Details](https://one.google.com/about/plans)) |
 | Local cluster (RMACC) | Intermediate | No | Private | Instant | | |
-| Immediate deletion | None | None | None | None | None | None |
+
 
 **Table 1**: Tradeoffs and considerations for data storage solutions.
