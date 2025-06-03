@@ -131,7 +131,7 @@ When a new storage solution is acquired for use we suggest abiding this naming p
 
 **Table 2.** Current storage solutions used by the lab along with their suggested use and interface.
 
-Consider the following data flow for projects to better understand how each of Table 2's data solutions fit together.
+Consider the following data flow in Figure 2 for projects to better understand how each of Table 2's data solutions fit together.
 
 ```mermaid
 flowchart LR
@@ -144,4 +144,4 @@ flowchart LR
     koala --> |eventually<br>transfer to| bandicoot
 ```
 
-**Figure 1.** Raw data is received by the lab from Google Cloud Storage (GCS) project-specific buckets or a collaborator storage solution which is provided upfront. A lab member then transfers the data from the GCS bucket or collaborator storage solution to bandicoot (Isilon) so it may be used or shared within the lab. If the data need to be processed on HPC Alpine a lab member may decide to transfer the data to koala (PetaLibrary). Once HPC Alpine processing is complete the data are transferred back to bandicoot.
+**Figure 2.** Raw data is received by the lab from Google Cloud Storage (GCS) project-specific buckets or a collaborator storage solution which is provided upfront. A lab member then transfers the data from the GCS bucket or collaborator storage solution to bandicoot (Isilon) so it may be used or shared within the lab. If the data need to be processed on HPC Alpine a lab member may decide to transfer the data to koala (PetaLibrary). Once HPC Alpine processing is complete the data are transferred back to bandicoot.
