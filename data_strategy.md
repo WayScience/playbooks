@@ -108,7 +108,7 @@ Importantly, we have different short, mid, and long term storage and sharing sol
 | [Figshare+](https://knowledge.figshare.com/plus) | High | Yes | Public | Download | 250GB > x > 5TB (Per dataset) | $745 > x > $11,860 one time cost ([Details](https://knowledge.figshare.com/plus)) |
 | [Zenodo](https://zenodo.org/) | High | Yes | Public | Download | >= 50GB (Per dataset) | Free ([Details](https://help.zenodo.org/)) |
 | Github | High | Yes | Public/Private | Instant | >= 100MB (Per file) ([Details](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)) | Free |
-| Github LFS | Intermediate | Yes | Public/Private | Instant | >= 2GB (up to 5GB for paid plans) | 50GB data pack for $5 per month ([Details](https://docs.github.com/en/billing/managing-billing-for-git-large-file-storage/about-billing-for-git-large-file-storage)) |
+| Git LFS (GitHub) | Intermediate | Yes | Public/Private | Instant | >= 2GB (up to 5GB for paid plans) | 50GB data pack for $5 per month ([Details](https://docs.github.com/en/billing/managing-billing-for-git-large-file-storage/about-billing-for-git-large-file-storage)) |
 | DVC | Intermediate | Yes | Public/Private | Download | None | Cost of linked service (AWS/Azure/GC) |
 | OneDrive | Low | Yes | Private | Instant | >= 5TB (Total) | Free to AMC |
 | Dropbox | Low | Yes | Public/Private | Instant | >= 5TB (Total) | $12.50 per user / month ([Details](https://www.dropbox.com/plans)) |
