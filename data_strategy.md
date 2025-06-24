@@ -167,5 +167,5 @@ Mounting an Isilon directory entails using operating system tools to help handle
 Please feel free to use the following script to automatically help setup your mount point to the Way Lab specific mount point on CU Anschutz Isilon: `bandicoot`.
 
 ```shell
-curl http:// | sh
+curl https://raw.githubusercontent.com/WayScience/playbooks/refs/heads/main/internal/mount_bandicoot.sh | sh
 ```
