@@ -80,8 +80,8 @@ case "$OS" in
         fi
 
         # Prompt the user for their CIFS username
-        printf "Isilon/CIFS username: "
-        read -r CIFS_USERNAME
+        printf "Isilon/CIFS username: " >/dev/tty
+        read -r CIFS_USERNAME </dev/tty  # read from the terminal, not the script pipe
 
         # Mount the share with domainauto for automatic domain selection
         sudo mount -t cifs "$SHARE" "$MOUNT_POINT" \

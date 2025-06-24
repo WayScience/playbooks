@@ -157,10 +157,10 @@ The S3-like API requires you to email IT support at: ucd-oit-helpdesk@cuanschutz
 Mounting an Isilon directory entails using operating system tools to help handle authentication and persistence:
 
 - __MacOS:__ [`mount_smbfs`](https://man.freebsd.org/cgi/man.cgi?mount_smbfs) is shipped with MacOS automatically and can be used to setup a connection to Isilon directories.
-For example: `mount_smbfs "$SHARE" "$MOUNT_POINT"`
+  For example: `mount_smbfs "$SHARE" "$MOUNT_POINT"`
 - __Linux:__ [`cifs-utils`](https://wiki.samba.org/index.php/LinuxCIFS_utils) can be used in conjunction with `mount` to help setup a connection to Isilon directories.
-For example: `mount -t cifs "$SHARE" "$MOUNT_POINT" -o username="$CIFS_USERNAME",domainauto`
-Note: `domainauto` is important for ensuring the connection to CU Anschutz shares.
+  For example: `mount -t cifs "$SHARE" "$MOUNT_POINT" -o username="$CIFS_USERNAME",domainauto`
+  Note: `domainauto` is important for ensuring the connection to CU Anschutz shares.
 
 ### Connection script
 
