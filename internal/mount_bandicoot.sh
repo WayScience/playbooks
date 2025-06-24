@@ -80,7 +80,7 @@ case "$OS" in
         fi
 
         # Prompt the user for their CIFS username
-        printf "Isilon/CIFS username: " >/dev/tty
+        printf "Isilon/CIFS username (CU Anschutz username): " >/dev/tty
         read -r CIFS_USERNAME </dev/tty  # read from the terminal, not the script pipe
         if [ -z "$CIFS_USERNAME" ]; then
             echo "✗ Username cannot be empty." >&2

@@ -154,7 +154,8 @@ flowchart LR
 Leveraging Isilon involves the use of a computer system with access to the campus or virtual private network (VPN).
 Isilon can be used through a filesystem mount or through the S3-like API.
 The S3-like API requires you to email IT support at: ucd-oit-helpdesk@cuanschutz.edu
-Mounting an Isilon directory entails using operating system tools to help handle authentication and persistence:
+Mounting an Isilon directory entails using operating system tools to help handle authentication and persistence.
+__Special note: the username provided when authenticating is your CU Anschutz enterprise username.__
 
 - __MacOS:__ [`mount_smbfs`](https://man.freebsd.org/cgi/man.cgi?mount_smbfs) is shipped with MacOS automatically and can be used to setup a connection to Isilon directories.
   For example: `mount_smbfs "$SHARE" "$MOUNT_POINT"`
