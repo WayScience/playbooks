@@ -148,3 +148,24 @@ flowchart LR
 ```
 
 **Figure 2.** Raw data is received by the lab from Google Cloud Storage (GCS) project-specific buckets or a collaborator storage solution which is provided upfront. A lab member then transfers the data from the GCS bucket or collaborator storage solution to bandicoot (Isilon) so it may be used or shared within the lab. If the data need to be processed on HPC Alpine a lab member may decide to transfer the data to koala (PetaLibrary). Once HPC Alpine processing is complete the data are transferred back to bandicoot.
+
+## Using Isilon
+
+Leveraging Isilon involves the use of a computer system with access to the campus or virtual private network (VPN).
+Isilon can be used through a filesystem mount or through the S3-like API.
+The S3-like API requires you to email IT support at: ucd-oit-helpdesk@cuanschutz.edu
+Mounting an Isilon directory entails using operating system tools to help handle authentication and persistence:
+
+- __MacOS:__ [`mount_smbfs`](https://man.freebsd.org/cgi/man.cgi?mount_smbfs) is shipped with MacOS automatically and can be used to setup a connection to Isilon directories.
+For example: `mount_smbfs "$SHARE" "$MOUNT_POINT"`
+- __Linux:__ [`cifs-utils`](https://wiki.samba.org/index.php/LinuxCIFS_utils) can be used in conjunction with `mount` to help setup a connection to Isilon directories.
+For example: `mount -t cifs "$SHARE" "$MOUNT_POINT" -o username="$CIFS_USERNAME",domainauto`
+Note: `domainauto` is important for ensuring the connection to CU Anschutz shares.
+
+### Connection script
+
+Please feel free to use the following script to automatically help setup your mount point to the Way Lab specific mount point on CU Anschutz Isilon: `bandicoot`.
+
+```shell
+curl http:// | sh
+```
