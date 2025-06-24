@@ -82,7 +82,10 @@ case "$OS" in
         # Prompt the user for their CIFS username
         printf "Isilon/CIFS username: " >/dev/tty
         read -r CIFS_USERNAME </dev/tty  # read from the terminal, not the script pipe
-
+        if [ -z "$CIFS_USERNAME" ]; then
+            echo "✗ Username cannot be empty." >&2
+            exit 1
+        fi
         # Mount the share with domainauto for automatic domain selection
         sudo mount -t cifs "$SHARE" "$MOUNT_POINT" \
             -o username="$CIFS_USERNAME",domainauto
