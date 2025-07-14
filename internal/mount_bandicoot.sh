@@ -88,7 +88,7 @@ case "$OS" in
         fi
         # Mount the share with domainauto for automatic domain selection
         sudo mount -t cifs "$SHARE" "$MOUNT_POINT" \
-            -o username="$CIFS_USERNAME",domainauto
+            -o username="$CIFS_USERNAME",domainauto,file_mode=0777,dir_mode=0777
         ;;
 
     *)
