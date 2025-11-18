@@ -87,7 +87,7 @@ case "$OS" in
             exit 1
         fi
         if [ -z "$USER" ]; then
-            echo " USER not defined, please define" > &2
+            echo "USER not defined, please define" > &2
             exit 1
         fi
         # Mount the share with domainauto for automatic domain selection
