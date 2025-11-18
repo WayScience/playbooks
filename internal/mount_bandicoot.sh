@@ -86,9 +86,13 @@ case "$OS" in
             echo "✗ Username cannot be empty." >&2
             exit 1
         fi
+        if [ -z "$USER" ]; then
+            echo "USER not defined, please define" >&2
+            exit 1
+        fi
         # Mount the share with domainauto for automatic domain selection
         sudo mount -t cifs "$SHARE" "$MOUNT_POINT" \
-            -o username="$CIFS_USERNAME",domainauto,file_mode=0777,dir_mode=0777
+            -o username="$CIFS_USERNAME",uid="$USER",gid="$USER",domainauto,file_mode=0777,dir_mode=0777
         ;;
 
     *)
