@@ -38,6 +38,8 @@ filename.tif    image/tiff  7225258
 
 6. Submit for review and record the accession ID.
 
+## After submission
+
 1. Watch the ["submissions" tab](https://www.ebi.ac.uk/biostudies/submissions/) for challenges with your upload (it will show an icon indicating there's an issue which needs to be resolved if something comes up).
 
 1. If you run into trouble or questions, reach out to bioimage-archive@ebi.ac.uk to help address issues.
