@@ -11,6 +11,10 @@ It hosts raw image datasets with stable accession IDs so others can find, access
 
 Use this guide when a project is ready to publish raw image data and the authoring team has decided to deposit in the BioImage Archive.
 
+## If you run into questions or issues
+
+> ⚠️ If you run into trouble or questions, reach out to [bioimage-archive@ebi.ac.uk](bioimage-archive@ebi.ac.uk) to help address issues.
+
 ## Prerequisites
 
 - A finalized dataset folder (no in-progress changes).
@@ -41,7 +45,5 @@ filename.tif    image/tiff  7225258
 ## After submission
 
 1. Watch the ["submissions" tab](https://www.ebi.ac.uk/biostudies/submissions/) for challenges with your upload (it will show an icon indicating there's an issue which needs to be resolved if something comes up).
-
-1. If you run into trouble or questions, reach out to bioimage-archive@ebi.ac.uk to help address issues.
 
 1. Once the submission is successful you'll have access to a link which [looks like this](https://www.ebi.ac.uk/biostudies/studies/S-BIAD2515) from the "submissions" tab.
