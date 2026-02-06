@@ -135,7 +135,7 @@ This process has many direct and indirect benefits.
 
    - The smaller the better; it is WAY easier to review if small
 
-1. **Agentic PRs:** If a pull request is created by a non-human actor (e.g., an agent or LLM model), treat it as a human-authored PR for review purposes. The person who initiated the agent action is considered the author (alongside the agent) and the PR still benefits from outside review by others.
+1. **Agentic PRs:** If a pull request is created by a non-human actor (e.g., an agent or LLM model), treat it as a human-authored PR for review purposes. The person who initiated the agent action is considered the author (alongside the agent) and the PR still benefits from outside review by others. One outside approval is still required for merging.
 
 1. The writer adds details to the pull request in markdown format
 
