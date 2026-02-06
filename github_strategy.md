@@ -40,7 +40,7 @@ We follow standard procedures when writing software packages including:
 
 - Gallery outlining example use cases
 
-Examples: [pycytominer](https://github.com/cytomining/pycytominer), [CytoSnake](https://github.com/WayScience/CytoSnake)
+Examples: [pycytominer](https://github.com/cytomining/pycytominer), [coSMicQC](https://github.com/cytomining/coSMicQC)
 
 ### 2. Analysis repository
 
