@@ -61,6 +61,7 @@ We suggest following the flowchart below to choose a license when creating a rep
 ![Process for choosing a repository license.](images/selecting_a_license.png)
 According to the [CU Innovations office](https://www.cuanschutz.edu/cu-innovations) when creating or modifying a license you must include the following line (with the appropriate year):
 `Copyright (c) <year> the Regents of the University of Colorado`
+If the copyright includes a range of years it is best practice to include this range in place of a single year: `<first_year>-<last_year_developed>`
 For further questions about licensing requirements contact the [CU Innovations Office](https://www.cuanschutz.edu/cu-innovations).
 To generate a license from a template in github follow [this github docs guide](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository)
 
