@@ -96,3 +96,4 @@ PYTHON_BIN="$ENV_PATH/bin/python3"
 
 # this calls the python kernel from the correct env
 "$PYTHON_BIN" python_script.py
+```
