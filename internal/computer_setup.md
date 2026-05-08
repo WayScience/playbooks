@@ -66,3 +66,34 @@ Sudo usermod -aG docker $USER
 newgrp docker
 
 docker run hello-world
+
+## Using uv on CU Anschutz HPC Alpine (early 2026)
+
+`uv` is not currently a standard, always-available Alpine module (as of early 2026).
+Load it from the Way Lab module path, then set storage locations on project storage before creating environments or installing tools.
+
+If you skip the storage exports below, `uv` may write into default home locations and cause storage/quota issues.
+
+```bash
+module use --append /pl/active/koala/software/lmod-files
+module load uv
+# test that uv loaded
+uv -v
+
+# uv paths on HPC project storage
+export UV_BASE=/projects/$USER/uv
+export UV_CACHE_DIR="$UV_BASE/cache"
+export UV_PYTHON_INSTALL_DIR="$UV_BASE/python"
+export UV_TOOL_DIR="$UV_BASE/tools"
+
+# set the exact path to the bin
+# if you do not set this then alpine will assume that the binary is found in their default location
+# this is important when running anything from scratch space
+ENV_PATH="/projects/mlippincott@xsede.org/software/uv/envs/nf1_uv_env/.venv"
+
+# This assigns the python binary path in the correct uv env
+PYTHON_BIN="$ENV_PATH/bin/python3"
+
+# this calls the python kernel from the correct env
+"$PYTHON_BIN" python_script.py
+```
