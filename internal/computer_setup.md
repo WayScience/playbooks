@@ -87,7 +87,7 @@ export UV_PYTHON_INSTALL_DIR="$UV_BASE/python"
 export UV_TOOL_DIR="$UV_BASE/tools"
 
 # set the exact path to the bin
-# if you do not set this then alpine will assume that the binary is found in their default location 
+# if you do not set this then alpine will assume that the binary is found in their default location
 # this is important when running anything from scratch space
 ENV_PATH="/projects/mlippincott@xsede.org/software/uv/envs/nf1_uv_env/.venv"
 
