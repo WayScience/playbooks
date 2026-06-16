@@ -170,3 +170,49 @@ Please feel free to use the following script to automatically help setup your mo
 ```shell
 curl https://raw.githubusercontent.com/WayScience/playbooks/refs/heads/main/internal/mount_bandicoot.sh | sh
 ```
+
+## Using PetaLibrary
+
+Leveraging PetaLibrary on CU Boulder Research Computing's HPC Cluster Alpine entails the use of [`sshfs`](https://github.com/libfuse/sshfs) to mount a PetaLibrary directory (e.g. `koala`) over an SSH connection to Alpine.
+Alternatively, [Globus Connect Personal](https://www.globus.org/globus-connect-personal) can be used for transferring data to/from PetaLibrary without a filesystem mount (see `koala` in the table above).
+
+__Special note on `$ALPINE_USERNAME`:__ for CU Anschutz users, this will almost always take the form of an XSEDE-style identity: `<your-rc-username>@xsede.org`, rather than a plain CU Anschutz username.
+
+__Special note on `IdentityFile=~/.ssh/alpine`:__ this `sshfs` option tells SSH which private key file to use for authenticating to Alpine (here, a key named `alpine` stored in your local `~/.ssh` directory). Replace this path with wherever you've stored the private SSH key you've set up for Alpine access; it does not need to be named `alpine`.
+
+- __MacOS:__ install [macFUSE](https://github.com/macfuse/macfuse/wiki/File-Systems-%E2%80%90-SSHFS) and `sshfs`:
+
+  ```shell
+  brew install --cask macfuse
+  ```
+
+  Then mount with `sshfs`, for example:
+
+  ```shell
+  sshfs -o IdentityFile=~/.ssh/alpine \
+    "$ALPINE_USERNAME@login.rc.colorado.edu:/pl/active/$PETALIBRARY_DIR" \
+    "$MOUNT_POINT"
+  ```
+
+- __Linux:__ install `sshfs` through your distribution's package manager, for example:
+
+  ```shell
+  # Debian / Ubuntu
+  sudo apt install sshfs
+
+  # Fedora / RHEL
+  sudo dnf install fuse-sshfs
+
+  # Alpine Linux
+  sudo apk add sshfs
+  ```
+
+  Then mount using the same command form as above:
+
+  ```shell
+  sshfs -o IdentityFile=~/.ssh/alpine \
+    "$ALPINE_USERNAME@login.rc.colorado.edu:/pl/active/$PETALIBRARY_DIR" \
+    "$MOUNT_POINT"
+  ```
+
+Note: speed comparisons between `sshfs` (PetaLibrary) and CIFS (Isilon) have not yet been performed; consider this if performance becomes a concern.
