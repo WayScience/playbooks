@@ -54,7 +54,22 @@ case "$OS" in
         # It will prompt you for credentials if required,
         # or use your current login keychain.
         #
-        mount_smbfs "$SHARE" "$MOUNT_POINT"
+        # NOTE: mount_smbfs falls back to your local Mac shortname as the
+        # SMB username if none is given in the UNC path. That shortname
+        # frequently does NOT match your CU Anschutz/AD username, which
+        # produces a generic "Authentication error" even with the correct
+        # password. To avoid this, prompt for the CU Anschutz username the
+        # same way the Linux branch does, and embed it in the share path.
+        #
+        printf "CU Anschutz username (for %s): " "$HOST" >/dev/tty
+        read -r SMB_USERNAME </dev/tty  # read from the terminal, not the script pipe
+        if [ -z "$SMB_USERNAME" ]; then
+            echo "✗ Username cannot be empty." >&2
+            exit 1
+        fi
+
+        SHARE_WITH_USER="//${SMB_USERNAME}@${SHARE#//}"
+        mount_smbfs "$SHARE_WITH_USER" "$MOUNT_POINT"
         ;;
 
     Linux)
