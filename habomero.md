@@ -60,7 +60,7 @@ flowchart LR
     isilon -->|mounted &<br>imported| habomero["Habomero<br>(OMERO service)"]
     habomero -->|browse &<br>analyze| analysts["Bioimage<br>analysts"]
     maintainers["Service<br>maintainers"] -.->|operate &<br>maintain| habomero
-    analysts -.->|direct mount<br>(optional)| isilon
+    analysts -.->|optional<br>direct mount| isilon
 ```
 
 **Figure 1.** Data / image providers upload images to Isilon under experiment-describing folders.
