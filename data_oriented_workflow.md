@@ -60,8 +60,8 @@ See the entries in [References and further reading](#5-references-and-further-re
 
 ## 2. When to apply this
 
-Apply this approach whenever your data exceeds roughly **1 GB** or any time a single full run would take longer than you are willing to wait for an iteration.
-Below that size, the feedback loop is fast enough that a pilot adds overhead without much benefit.
+Apply this approach any time a single full run would take longer than you are willing to wait for an iteration.
+A rough proxy is when the data no longer fit comfortably in memory, so each iteration leaves your interactive session and becomes a job you wait on; below that, the feedback loop is fast enough that a pilot adds overhead without much benefit.
 
 ## 3. The pilot workflow loop
 
