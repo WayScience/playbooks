@@ -42,7 +42,7 @@ The pilot loop is the mechanism by which *work → right → fast* becomes a pra
 
 The [SK-N-AS CytoTable pilot](https://github.com/d33bs/SK-N-AS_cytotable_pilot) is a direct instance of this loop.
 The source dataset is a single-plate CellProfiler SQLite export (`BR00148945.sqlite`) of roughly **62 GB**, far too large to iterate quickly on.
-Instead of converting it outright, the pilot shrinks it (`make shrink`) to a one-image subset, `BR00148945_image1.sqlite`: well A01, site 1, 632 joined cell/nuclei/cytoplasm objects and their six matching source-channel TIFFs.
+Instead of converting it outright, the pilot shrinks it (`make shrink`) to a one-image subset, `BR00148945_image1.sqlite` (~17 MB, down from 62 GB): well A01, site 1, 632 joined cell/nuclei/cytoplasm objects and their six matching source-channel TIFFs.
 That subset is the smallest thing that still exercises the full conversion path, exactly as step 1 of [the pilot workflow loop](#3-the-pilot-workflow-loop) asks for.
 
 The three phases then play out as predicted:
