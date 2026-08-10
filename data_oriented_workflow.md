@@ -17,13 +17,14 @@ This allows one to make it work, make it right, and make it fast in succession.
 
 ### 1.1 Why the order matters: the three phases mapped onto the pilot loop
 
-That line is the well-known engineering maxim *make it work, make it right, make it fast*, and the [pilot workflow loop](#3-the-pilot-workflow-loop) maps onto it almost exactly:
+That line is the well-known engineering maxim *make it work, make it right, make it fast*, and the [pilot workflow loop](#3-the-pilot-workflow-loop) maps onto it almost exactly.
+First pick the smallest meaningful subset (step 1); the three phases then run on that subset:
 
-- **Make it work**: get the pipeline running end-to-end on the tiny subset *at all* (step 2).
+- **Make it work** (step 2): get the pipeline running end-to-end on the subset *at all*.
   The only goal is that every stage connects and produces output; correctness and speed are not yet in scope.
-- **Make it right**: iterate against the subset until the logic is correct, then validate that the subset is representative of the full data (steps 3–4).
+- **Make it right** (steps 3–4): iterate against the subset until the logic is correct, then check that the subset is representative of the full data.
   Bugs are cheap to find here because each run is small.
-- **Make it fast**: only now scale up to the full dataset (step 5).
+- **Make it fast** (step 5): only now scale up to the full dataset.
   This is the one place where performance actually matters, and the logic is already stable, so that run can be spent tuning memory, I/O, and runtime rather than chasing bugs.
 
 The phases have to happen in this order, and the pilot enforces that ordering by making each phase cheap before you commit to the next:
