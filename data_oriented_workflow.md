@@ -8,6 +8,8 @@ A strategy for building and iterating on data workflows while minimizing compute
 
 When a dataset is large, running an entire workflow end-to-end on the full data is slow and expensive.
 Every iteration (a bug fix, a new parameter, a renamed column) costs you the full runtime again, and the feedback loop drags out until it is easy to lose the thread entirely.
+On a batch-scheduled HPC cluster like Alpine, the crunch is sharper still: each iteration costs queue wait time on top of runtime, and the compute is a metered allocation you spend down.
+A job that runs in minutes can still cost wall-clock hours before it even starts, so the feedback loop stretches by the queue, not just by the code.
 
 The fix is simple: **get the workflow working at all on the smallest possible subset of the data, iterate on building your workflow, then scale up.**
 Treat the full dataset as where the workflow becomes real, and run against it only once it is correct and stable.
