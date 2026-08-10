@@ -41,6 +41,7 @@ Besides the most raw form, data are dynamic and pluripotent; always awaiting new
 We need to understand how each specific data level was processed at the specific moment in time (data provenance), and where each data level is ultimately heading for longer term storage.
 We also need capabilities to quickly reprocess these data with new approaches.
 Consider each data processing step as a new research project, waiting for improvement.
+See the [Data-Oriented Workflow](data_oriented_workflow.md) for a concrete strategy to iterate on these steps cheaply — build and validate each step on a small subset of the data before scaling up to the full dataset.
 
 Flow also refers to users and data demand.
 We need to consider data analysis activity at each particular moment.
