@@ -13,18 +13,6 @@ set -eu
 # -e: exit immediately on any error
 # -u: treat unset variables as an error
 
-# shellcheck disable=SC1007
-SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
-BANDICOOT_SCRIPT="$SCRIPT_DIR/mount_bandicoot.sh"
-KOALA_SCRIPT="$SCRIPT_DIR/mount_koala.sh"
-
-for script in "$BANDICOOT_SCRIPT" "$KOALA_SCRIPT"; do
-    if [ ! -f "$script" ]; then
-        echo "✗ Expected script not found: $script" >&2
-        exit 1
-    fi
-done
-
 echo "Which NAS would you like to mount?"
 echo "  1) bandicoot (Isilon)"
 echo "  2) koala (PetaLibrary / Alpine)"
@@ -34,14 +22,17 @@ read -r CHOICE </dev/tty
 
 case "$CHOICE" in
     1)
-        sh "$BANDICOOT_SCRIPT"
+        curl https://raw.githubusercontent.com/WayScience/playbooks/refs/heads/main/internal/mount_bandicoot.sh | sh
+
         ;;
     2)
-        sh "$KOALA_SCRIPT"
+        curl https://raw.githubusercontent.com/WayScience/playbooks/refs/heads/main/internal/mount_koala.sh | sh
+
         ;;
     3)
-        sh "$BANDICOOT_SCRIPT"
-        sh "$KOALA_SCRIPT"
+        curl https://raw.githubusercontent.com/WayScience/playbooks/refs/heads/main/internal/mount_bandicoot.sh | sh
+        curl https://raw.githubusercontent.com/WayScience/playbooks/refs/heads/main/internal/mount_koala.sh | sh
+
         ;;
     *)
         echo "✗ Invalid choice: $CHOICE" >&2

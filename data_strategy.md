@@ -221,13 +221,15 @@ Note: speed comparisons between `sshfs` (PetaLibrary) and CIFS (Isilon) have not
 
 ### Connection script
 
-Please feel free to use the following script to automatically help setup your mount point to the Way Lab specific mount point for both PetaLibrary and Isilon: `koala` and `bandicoot`, respectively.
+Please feel free to use the following script to automatically help setup your mount point to the Way Lab specific mount point on CU Boulder Research Computing PetaLibrary: `koala`.
 
 ```shell
 curl https://raw.githubusercontent.com/WayScience/playbooks/refs/heads/main/internal/mount_koala.sh | sh
 ```
 
 ## Mounting both Isilon and PetaLibrary at once
+
+Please feel free to use the following script to automatically help setup your mount point to the Way Lab specific mount point for both PetaLibrary and Isilon: `koala` and `bandicoot`, respectively.
 
 ```shell
 curl https://raw.githubusercontent.com/WayScience/playbooks/refs/heads/main/internal/mount_nas.sh | sh

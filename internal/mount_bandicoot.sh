@@ -94,7 +94,7 @@ case "$OS" in
             echo "   A failure here is almost always a wrong AD domain, not a" >&2
             echo "   wrong password. Try again with a different domain (e.g." >&2
             echo "   UCHSC, the campus's legacy AD name) or '-' to omit it." >&2
-            # exit 1
+            exit 1
         fi
         ;;
 

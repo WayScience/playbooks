@@ -1,3 +1,4 @@
+import os
 import pathlib
 
 import pytest
@@ -49,7 +50,7 @@ def test_nas_path_check_defaults_to_root_when_nas_name_invalid(tmp_path, capsys)
 
 @pytest.mark.parametrize("nas_name", ["bandicoot", "koala"])
 def test_nas_path_check_returns_mount_when_it_exists(tmp_path, monkeypatch, nas_name):
-    monkeypatch.setattr(pathlib.Path, "exists", lambda self: True)
+    monkeypatch.setattr(os.path, "ismount", lambda path: True)
 
     result = nas_path_check(root_dir=tmp_path, nas_name=nas_name)
 
@@ -60,7 +61,7 @@ def test_nas_path_check_returns_mount_when_it_exists(tmp_path, monkeypatch, nas_
 def test_nas_path_check_falls_back_to_root_when_mount_missing(
     tmp_path, monkeypatch, capsys, nas_name
 ):
-    monkeypatch.setattr(pathlib.Path, "exists", lambda self: False)
+    monkeypatch.setattr(os.path, "ismount", lambda path: False)
 
     result = nas_path_check(root_dir=tmp_path, nas_name=nas_name)
 

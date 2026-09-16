@@ -44,7 +44,7 @@ def init_notebook() -> Tuple[pathlib.Path, bool]:
 
 
 def nas_path_check(
-    root_dir: pathlib.Path = init_notebook()[0],
+    root_dir: pathlib.Path | None = None,
     nas_name: str | None = None,
 ) -> pathlib.Path:
     """
@@ -52,7 +52,7 @@ def nas_path_check(
 
     Parameters
     ----------
-    root_dir : pathlib.Path, optional
+    root_dir : pathlib.Path | None, optional
         The root directory of the Git repository. Defaults to the result of init_notebook().
     nas_name : str | None, optional
         The name of the NAS mount point. If None, defaults to "bandicoot".
@@ -68,6 +68,9 @@ def nas_path_check(
     - If nas_name is not "bandicoot" or "koala", a warning is printed and the function defaults to the Git root directory.
     - If the specified NAS mount point does not exist, a warning is printed and the function defaults to the Git root directory.
     """
+    if root_dir is None:
+        root_dir = init_notebook()[0]
+
     if nas_name is None:
         print("Warning: nas_name is None. Defaulting to 'git root directory'.")
         return root_dir
@@ -81,7 +84,7 @@ def nas_path_check(
     else:
         nas_path = pathlib.Path(os.path.expanduser("~/mnt/koala")).resolve()
 
-    if not nas_path.exists():
+    if not os.path.ismount(nas_path):
         # revert to the git root directory if the NAS mount point does not exist
         print(f"Warning: {nas_name} mount point does not exist. Reverting to the Git root directory.")
         return root_dir
