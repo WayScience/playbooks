@@ -15,6 +15,7 @@ Playbooks in the `/internal` folder have information specific to the Way Lab.
 | └─ [Data-Oriented Workflow](data_oriented_workflow.md)         | Sub      | Pilot workflows on small data subsets before scaling to large datasets.     |
 | [GitHub Strategy](github_strategy.md)                          | General  | Strategy for using GitHub efficiently; details our 3 types of repositories. |
 | [Habomero](habomero.md)                                        | General  | Using the habomero image service and connecting to its Isilon data source.  |
+| [Project Card](project_card.md)                                | General  | Standardized one-page template for summarizing a project's design and data. |
 | [Calendar Playbook](internal/calendar_playbook.md)             | Internal | Playbook for joining and using Way Lab calendar.                            |
 | [Computer Setup](internal/computer_setup.md)                   | Internal | Instructions for lab computer setup.                                        |
 | [BioImage Archive Upload](internal/bioimage_archive_upload.md) | Internal | Minimal guide to uploading datasets to the BioImage Archive.                |
