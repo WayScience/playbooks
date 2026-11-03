@@ -25,18 +25,20 @@ Skip it only for small, short-lived exploratory work that will not become its ow
 
 Regardless of project specifics, every project card answers the same questions:
 
-| Section             | Always answers                                                                           |
-| ------------------- | ---------------------------------------------------------------------------------------- |
-| Overview            | What is this project, who owns it, what is its status and data classification right now? |
-| Design              | What is the hypothesis, the experimental design, and the scale of the data?              |
-| Biological material | Who/what are the patients or subjects, and what cell type(s) are used?                   |
-| Assay               | What stains, dyes, or antibodies mark what, on what channel?                             |
-| Imaging             | What microscope, image format, bit depth, and dimensions produced the images?            |
-| Data                | Where do the raw and processed data live, and who/what can access them?                  |
-| Contacts            | Who is the PI, project lead, and who else is involved?                                   |
-| Changelog           | What has materially changed about the project, and when?                                 |
+| Section             | Always answers                                                                                   |
+| ------------------- | ------------------------------------------------------------------------------------------------ |
+| Overview            | What is this project, who owns it, what is its status and data classification right now?         |
+| Design              | What is the hypothesis, the disease studied, the experimental design, and the scale of the data? |
+| Biological material | Who/what are the patients or subjects, what cell type(s), and what disease and treatments?       |
+| Assay               | What stains, dyes, or antibodies mark what, on what channel?                                     |
+| Imaging             | What microscope, image format, bit depth, and dimensions produced the images?                    |
+| Data                | Where do the raw and processed data live, and who/what can access them?                          |
+| Contacts            | Who is the PI, project lead, and who else is involved?                                           |
+| Changelog           | What has materially changed about the project, and when?                                         |
 
 See the [template](templates/project_card_template.md) for the full field-by-field layout, including examples (e.g. Cell Painting channel naming) for the assay and imaging sections.
+
+For projects that model a disease or apply treatments (drugs, biologics, gene therapies), the biological material section also records the disease/condition — stage and how it was confirmed — and each treatment's target, dose, route, and schedule. Projects with no disease model, or whose "treatments" are screening perturbations already enumerated in the design section and platemap, write "N/A" with that reason instead of duplicating the library.
 
 ### Data classification
 
